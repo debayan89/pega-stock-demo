@@ -1,0 +1,8 @@
+web:
+  image: stock-app
+  ports:
+   - "8082:8082"
+  links:
+    - redis:redis
+redis:
+  image: redis
